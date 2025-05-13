@@ -1,0 +1,444 @@
+<!DOCKTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<html lang="ru">
+    <head>
+        <link href="css/style.css" rel="stylesheet" />
+        <title>AOD</title>
+        <meta http-equiv="�ontent-type" content="text/html;  charset=UTF-8"/>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-screen, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href=""rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__row">
+                    <div class="header__title">
+                        <div class="header__logo"></div>
+                        <div class="header__text">SPUTNIK</div>
+                        <div class="header__btns">
+                            <div class="header__btn btn">
+                                <a class="btnn" href="#popup-auth">ВХОД</a>
+                            </div>
+                            <div class="header__btn btn">
+                                <a class="btnn" href="#popup-reg">РЕГИСТРАЦИЯ</a>
+                            </div>
+                        </div>
+                        <nav class="header__menu menu">
+                            <div class="menu__body">
+                                <ul class="menu__list">
+                                    <li> <a class="menu__link" href="#adv" >ПРЕИМУЩЕСТВА</a></li>
+                                    <li> <a class="menu__link" href="#exmp">ПРИМЕР</a></li>
+                                    <li> <a class="menu__link" href="">ОТЗЫВЫ</a></li>
+                                    <li> <a class="menu__link" href="#tm">КОМАНДА</a></li>
+                                    <li> <a class="menu__link" href="#cntc">КОНТАКТЫ</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div> 
+                
+                </div>
+            </header>
+            <main class="main">
+                <section class="hi">
+                    <div class="container">
+                        <div class="hi__row">
+                            <div class="hi__title">
+                                <div class="title__text">
+                                    Умные камеры для подсчета посетителей
+                                </div>
+                            </div>
+                            <div class="hi__camera">
+                                <div class="hi__text">
+                                    <p>Эффективное решение для бизнеса.</p>
+                                    <p>Камеры с нейросетью точно подсчитывают количество людей, вошедших в заведение.</p>
+                                </div>
+                                <div class="hi__btn">
+                                    <a class="btnnn" href="#expl">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="adv" class="advantages">
+                    <div class="container">
+                        <div class="advantages__title">Преимущества использования умных камер для подсчета посетителей </div>
+                        <div class="advantages__subtitle">Камеры с нейросетью обеспечивают точный подсчет посетителей и аналитику для бизнеса.</div>
+                        <div class="advantages__row">
+                            <div class="advantages__column">
+                                <div class="column__item">
+                                    <div class="item__img">
+                                        <img class="column__img" src="img/icon1.svg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="column__title">Торговые центры</div>
+                                        <div class="column__text">Анализ потока посетителей помогает оптимизировать работу магазинов и улучшить клиентский опыт.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__column">
+                                <div class="column__item">
+                                    <div class="item__img">
+                                        <img class="column__img" src="img/icon2.svg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="column__title">Рестораны и кафе</div>
+                                        <div class="column__text">Мониторинг посещаемости позволяет эффективно планировать работу персонала и управлять запасами.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__column">
+                                <div class="column__item">
+                                    <div class="item__img">
+                                        <img class="column__img" src="img/icon3.svg" alt="">
+                                    </div>
+                                    <div class="item__body">
+                                        <div class="column__title">Спортивные центры</div>
+                                        <div class="column__text">Отслеживание количества посетителей помогает оптимизировать расписание занятий и улучшать сервис.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="expl" class="explain">
+                    <div class="container">
+                        <div class="explain__body">
+                            <div class="explain__item">
+                                <div class="explain__title">
+                                    Как это работает?
+                                </div>
+                                <div class="explain__text">
+                                    С применением YOLOv5 мы можем быстро и эффективно выявлять людей на видео. 
+                                    При каждом выявлении человеку присваивается уникальный код (ID), что позволяет отслеживать его перемещение 
+                                    на протяжении всего видео. Важно отметить, что при пересечении заданной зоны уникальный код человека фиксируется, 
+                                    что дает нам возможность отслеживать, кто именно пересек эту область. В итоге, мы способны подсчитать количество уникальных 
+                                    кодов, что соответствует количеству уникальных людей, которые пересекли определенную зону, обеспечивая тем самым точный 
+                                    анализ движения людей в заданном пространстве.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="exmp" class="example">
+                    <div class="container">
+                        <div class="example__body">
+                            <div class="example__item">
+                                <div class="item__title">Пример работы камеры</div>
+                                <div class="item__video">
+                                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/U_Ek_3jh6fk?si=qrZg-HnUPeDsHxhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="rev" class="review">
+                    <div class="container">
+                        
+                        <h2>Отзывы</h2>
+
+                        <div id="reviews-container"></div> <!-- Контейнер для отзывов -->
+
+                        <h2>Оставить отзыв</h2>
+                        <form id="review-form">
+                            <input type="text" id="review-name" placeholder="Ваше имя..." required>
+                            <textarea id="review-text" placeholder="Ваш отзыв..." required></textarea>
+                            <button type="submit">Отправить</button>
+                        </form>
+
+                        <script src="/js/review.js"></script>
+
+
+
+                    </div>
+                </section>
+                <section id="tm" class="team">
+                    <div class="container">
+                        <div class="team__title">
+                            Наша команда
+                        </div>
+                        <div class="team__row">
+                            <div class="team__column">
+                                <div class="column__body">
+                                    <div class="column__person">
+                                        <div class="person__img">
+                                            <img class="pers-image"src="" alt="">
+                                        </div>
+                                        <div class="person__name">
+                                            Дмитрий
+                                        </div>
+                                        <div class="person__role">
+                                            Фронтенд-разработчик
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column__person">
+                                    <div class="person__img">
+                                        <img class="pers-image"src="" alt="">
+                                    </div>
+                                    <div class="person__name">
+                                        Карина
+                                    </div>
+                                    <div class="person__role">
+                                        Дизайнер
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__column">
+                                <div class="column__body">
+                                    <div class="column__person">
+                                        <div class="person__img">
+                                            <img class="pers-image"src="" alt="">
+                                        </div>
+                                        <div class="person__name">
+                                            Ангелина
+                                        </div>
+                                        <div class="person__role">
+                                            Бекенд-разработчик
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column__person">
+                                    <div class="person__img">
+                                        <img class="pers-image"src="" alt="">
+                                    </div>
+                                    <div class="person__name">
+                                        Анна
+                                    </div>
+                                    <div class="person__role">
+                                        Экономист
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__column">
+                                <div class="column__body">
+                                    <div class="column__person">
+                                        <div class="person__img">
+                                            <img class="pers-image"src="" alt="">
+                                        </div>
+                                        <div class="person__name">
+                                            Валерия
+                                        </div>
+                                        <div class="person__role">
+                                            Программист
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column__person">
+                                    <div class="person__img">
+                                        <img class="pers-image"src="" alt="">
+                                    </div>
+                                    <div class="person__name">
+                                        Маргарита
+                                    </div>
+                                    <div class="person__role">
+                                        Капитан, экономист
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__column">
+                                <div class="column__body">
+                                    <div class="column__person">
+                                        <div class="person__img">
+                                            <img class="pers-image"src="" alt="">
+                                        </div>
+                                        <div class="person__name">
+                                            Арина
+                                        </div>
+                                        <div class="person__role">
+                                            Программист
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column__person">
+                                    <div class="person__img">
+                                        <img class="pers-image"src="" alt="">
+                                    </div>
+                                    <div class="person__name">
+                                        Илья
+                                    </div>
+                                    <div class="person__role">
+                                        Проджект менеджер
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="cntc" class="contacts">
+                    <div class="container">
+                        <div class="contacts__body">
+                            <div class="contacts__title">СВЯЖИТЕСЬ С НАМИ ДЛЯ УСТАНОВКИ УМНЫХ КАМЕР</div>
+                            <div class="contacts__contact">
+                                <p>8 800 555-77-88</p>
+                                <p>example@example.ru</p>
+                            </div>
+                            <div class="contacts__adress">
+                                Бизнес-центр «Развитие», ул. Офисная, 10,
+                                Москва
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts__logo">
+                                    <a href="">
+                                        <img class="logo-img" src="/img/icons/icons8-vk-64.png" width="64" height="64">
+                                    </a>
+                                </div>
+                                <div class="contacts__logo">
+                                    <a class="logo-img-tg" target="_blank" href="https://t.me/sputniksmart">
+                                        <img class="logo-img" src="/img/icons/icons8-телеграм-64.png" width="64" height="64">
+                                    </a>
+                                </div>
+                                <div class="contacts__logo clw">
+                                    <a class="logo-img-wa" target="_blank" href="">
+                                        <img class="logo-img" src="/img/icons/icons8-whatsapp-64.png" width="64" height="64">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="footer__text">© Sputnik 2025</div>
+                    </div>
+                </div>
+            </footer>
+
+            {% load static %}
+
+            <!-- POPUP: Вход -->
+            <div id="popup-auth" class="popup">
+              <a href="#forclosepopup" class="popup__area"></a>
+              <div class="popup__body">
+                <div class="popup__content">
+                  <div class="popup__header">
+                    <div class="popup__title">Sputnik</div>
+                  </div>
+                  <div class="popup__item">
+                    <div class="popup__subtitle">Авторизация</div>
+                    <form class="formbt1"
+                          method="post"
+                          action="{% url 'login' %}">
+                      {% csrf_token %}
+
+                      {% if form_type == 'login' %}
+                        {% if form.username.errors %}
+                          <div class="error">{{ form.username.errors.0 }}</div>
+                        {% endif %}
+                        <div class="popup__login plp">
+                          <input
+                            type="text"
+                            name="username"
+                            id="id_username"
+                            placeholder="Имя пользователя"
+                            value="{{ form.username.value|default:'' }}"
+                          >
+                        </div>
+
+                        {% if form.password.errors %}
+                          <div class="error">{{ form.password.errors.0 }}</div>
+                        {% endif %}
+                        <div class="popup__passw plp">
+                          <input
+                            type="password"
+                            name="password"
+                            id="id_login_password"
+                            placeholder="Пароль"
+                          >
+                        </div>
+                      {% endif %}
+
+                      <div class="popup__btn">
+                        <button class="auth__btn" type="submit">Войти</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="popup__bottom">
+                    Нет аккаунта? <a class="regg" href="#popup-reg">Регистрация</a>
+                  </div>
+                  <a href="#forclosepopup" class="popup__close">X</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- POPUP: Регистрация -->
+            <div id="popup-reg" class="popup">
+              <a href="#forclosepopup" class="popup__area"></a>
+              <div class="popup__body">
+                <div class="popup__content">
+                  <div class="popup__header">
+                    <div class="popup__title">Sputnik</div>
+                  </div>
+                  <div class="popup__item">
+                    <div class="popup__subtitle">Регистрация</div>
+                    <form class="formbt1"
+                          method="post"
+                          action="{% url 'register' %}">
+                      {% csrf_token %}
+
+                      {% if form_type == 'register' %}
+                        {% if form.first_name.errors %}
+                          <div class="error">{{ form.first_name.errors.0 }}</div>
+                        {% endif %}
+                        <div class="popup__name">
+                          <input
+                            type="text"
+                            name="first_name"
+                            id="id_first_name"
+                            placeholder="Имя"
+                            value="{{ form.first_name.value|default:'' }}"
+                          >
+                        </div>
+
+                        {% if form.email.errors %}
+                          <div class="error">{{ form.email.errors.0 }}</div>
+                        {% endif %}
+                        <div class="popup__login plp">
+                          <input
+                            type="email"
+                            name="email"
+                            id="id_email"
+                            placeholder="Адрес электронной почты"
+                            value="{{ form.email.value|default:'' }}"
+                          >
+                        </div>
+
+                        {% if form.password.errors %}
+                          <div class="error">{{ form.password.errors.0 }}</div>
+                        {% endif %}
+                        <div class="popup__passw plp">
+                          <input
+                            type="password"
+                            name="password"
+                            id="id_register_password"
+                            placeholder="Пароль"
+                          >
+                        </div>
+                      {% endif %}
+
+                      <div class="popup__btn">
+                        <button class="auth__btn" type="submit">
+                          Зарегистрироваться
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="popup__bottom">
+                    Уже зарегистрированы? <a class="regg" href="#popup-auth">Войти</a>
+                  </div>
+                  <a href="#forclosepopup" class="popup__close">X</a>
+                </div>
+              </div>
+            </div>
+
+
+            <script src="{% static 'js/review.js' %}"></script>
+
+
+        </div>
+    </body>
+</html>
