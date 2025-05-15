@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <html lang="ru">
     <head>
-        <link href="css/style.css" rel="stylesheet" />
+
         <title>AOD</title>
         <meta http-equiv="�ontent-type" content="text/html;  charset=UTF-8"/>
         <meta name="format-detection" content="telephone=no">
@@ -325,23 +325,18 @@
                           action="{% url 'login' %}">
                       {% csrf_token %}
 
-                      {% if form_type == 'login' %}
-                        {% if form.username.errors %}
-                          <div class="error">{{ form.username.errors.0 }}</div>
-                        {% endif %}
+
                         <div class="popup__login plp">
                           <input
                             type="text"
-                            name="username"
-                            id="id_username"
+                            name="first_name"
+                            id="id_first_name_log"
                             placeholder="Имя пользователя"
                             value="{{ form.username.value|default:'' }}"
                           >
                         </div>
 
-                        {% if form.password.errors %}
-                          <div class="error">{{ form.password.errors.0 }}</div>
-                        {% endif %}
+
                         <div class="popup__passw plp">
                           <input
                             type="password"
@@ -350,7 +345,7 @@
                             placeholder="Пароль"
                           >
                         </div>
-                      {% endif %}
+
 
                       <div class="popup__btn">
                         <button class="auth__btn" type="submit">Войти</button>
@@ -380,10 +375,6 @@
                           action="{% url 'register' %}">
                       {% csrf_token %}
 
-                      {% if form_type == 'register' %}
-                        {% if form.first_name.errors %}
-                          <div class="error">{{ form.first_name.errors.0 }}</div>
-                        {% endif %}
                         <div class="popup__name">
                           <input
                             type="text"
@@ -394,9 +385,7 @@
                           >
                         </div>
 
-                        {% if form.email.errors %}
-                          <div class="error">{{ form.email.errors.0 }}</div>
-                        {% endif %}
+
                         <div class="popup__login plp">
                           <input
                             type="email"
@@ -418,7 +407,7 @@
                             placeholder="Пароль"
                           >
                         </div>
-                      {% endif %}
+
 
                       <div class="popup__btn">
                         <button class="auth__btn" type="submit">

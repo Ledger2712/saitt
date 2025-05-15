@@ -179,7 +179,7 @@ li:last-child{
 }
 
 .hi{
-    background: url('/img/hi.jpeg') no-repeat center /cover #555555;
+    background: url('images/hi.jpeg') no-repeat center /cover #555555;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
