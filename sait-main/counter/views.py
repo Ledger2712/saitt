@@ -8,6 +8,6 @@ def index(request):
 
 def video_feed(request):
     return StreamingHttpResponse(
-        gen_frames('2.mp4'),   # или 0 для веб-камеры
+        gen_frames(0),   # или 0 для веб-камеры
         content_type='multipart/x-mixed-replace; boundary=frame'
     )
