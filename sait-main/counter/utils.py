@@ -13,7 +13,7 @@ def gen_frames(source='2.mp4'):
         raise RuntimeError("Не удалось открыть видеофайл")
 
     tracker = Tracker()
-    area = [(360,292),(566,291),(566,311),(372,307)]
+    area = [(465, 494),(465, 13),(490, 13),(490, 494)]
     seen_ids = set()
 
     while True:
