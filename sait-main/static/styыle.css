@@ -275,8 +275,8 @@ p:first-child{
 .column__img{
     
     margin: 0 0 30px 0;
-    width: 120px;
-    height: 120px;
+    width: 400px;
+    height: 300px;
     border: 1px solid black;
 }
 .column__title{
